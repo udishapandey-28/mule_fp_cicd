@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="jenkins-github-demoFlow" doc:id="3cd11c81-5482-4111-b4a3-428fe851d64b" >
 		<http:listener doc:name="Listener" doc:id="575a71c4-fd7f-4414-a9ce-964b560c8064" config-ref="HTTP_Listener_config" path="/employees"/>
-		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="1db9cb84-2bce-4950-bb0c-b6531a4a9515" />
+		<set-payload value="payload has been changed" doc:name="Set Payload" doc:id="1db9cb84-2bce-4950-bb0c-b6531a4a9515" />
 	</flow>
 </mule>
