@@ -4,11 +4,11 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c8e97c72-7360-4a19-b758-1e116c3e8307" >
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="16ce1d56-519a-4fd2-a3fe-cade0e3a8d18" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="jenkins-github-demoFlow" doc:id="3cd11c81-5482-4111-b4a3-428fe851d64b" >
-		<http:listener doc:name="Listener" doc:id="575a71c4-fd7f-4414-a9ce-964b560c8064" config-ref="HTTP_Listener_config" path="/employees"/>
-		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="1db9cb84-2bce-4950-bb0c-b6531a4a9515" />
+	<flow name="myjenkinspractiseFlow" doc:id="c9e9e50e-ecbe-42e9-aa9e-d1ce39e2842a" >
+		<http:listener doc:name="Listener" doc:id="43a82f25-5faf-4756-a103-ca53c683168f" config-ref="HTTP_Listener_config" path="/practise"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="ca4b2725-c7a3-4f5c-b3d4-c6eef2d6338c" />
 	</flow>
 </mule>
