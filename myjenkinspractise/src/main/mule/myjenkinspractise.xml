@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="myjenkinspractiseFlow" doc:id="c9e9e50e-ecbe-42e9-aa9e-d1ce39e2842a" >
 		<http:listener doc:name="Listener" doc:id="43a82f25-5faf-4756-a103-ca53c683168f" config-ref="HTTP_Listener_config" path="/practise"/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="ca4b2725-c7a3-4f5c-b3d4-c6eef2d6338c" />
+		<logger level="INFO" doc:name="Logger" doc:id="55b0168a-9200-4d63-a747-f6bf870ac176" message="#[payload]"/>
 	</flow>
 </mule>
