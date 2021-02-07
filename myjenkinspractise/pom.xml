@@ -41,7 +41,7 @@
                         <muleVersion>4.3.0</muleVersion>
                         <workers>1</workers>
                         <workerType>Micro</workerType>
-                        <applicationName>mypractise-application-udi</applicationName>
+                        <applicationName>mypractise-application-udi-2</applicationName>
                         <objectStoreV2>true</objectStoreV2>
                     </cloudHubDeployment>
 				</configuration>
@@ -117,8 +117,8 @@
     </pluginRepositories>
     <distributionManagement>
         <snapshotRepository>
-            <id>fa3repo</id>
-            <name>fa3repo</name>
+            <id>mypractiserepo</id>
+            <name>mypractiserepo</name>
             <url>http://localhost:8091/repository/mypractiserepo/</url>
         </snapshotRepository>
     </distributionManagement>
