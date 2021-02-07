@@ -41,7 +41,7 @@
                         <muleVersion>4.3.0</muleVersion>
                         <workers>1</workers>
                         <workerType>Micro</workerType>
-                        <applicationName>mypractise-application-udi-2</applicationName>
+                        <applicationName>mypractise-application-udi-4</applicationName>
                         <objectStoreV2>true</objectStoreV2>
                     </cloudHubDeployment>
 				</configuration>
